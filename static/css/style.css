@@ -8033,7 +8033,7 @@ h1, h2, h3, h4, h5,
       left: 0;
       right: 0;
       z-index: 3;
-      background: transparent; } }
+      background: #202020; } }
 
 .ftco-navbar-light {
   background: #fff !important;
@@ -9736,3 +9736,19 @@ textarea.form-control {
   100% {
     stroke-dasharray: 89, 200;
     stroke-dashoffset: -136px; } }
+.mt-b-50{
+    margin: 20% 0;
+}
+.wrap-color{
+    display: flex;
+    padding: 0 10%;
+}
+.color{
+    padding: 10px 10px;
+    flex: 10 10 10%;
+    border: 1px solid;
+}
+.ral-txt{
+    text-align: center;
+    margin: 0;
+}
