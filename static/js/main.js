@@ -44,7 +44,7 @@
 	    dots: true,
 	    autoplayHoverPause: false,
 	    items: 1,
-	    navText : ["<span class='ion-ios-arrow-back'></span>","<span class='ion-ios-arrow-forward'></span>"],
+	    navText : ['<div class="arrow-3"><div class="arrow-3-top"></div><div class="arrow-3-bottom"></div></div>','<div class="arrow-2"><div class="arrow-2-top"></div><div class="arrow-2-bottom"></div></div>'],
 	    responsive:{
 	      0:{
 	        items:1

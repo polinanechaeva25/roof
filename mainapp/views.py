@@ -6,3 +6,13 @@ from django.views.generic import ListView
 class MainListView(ListView):
     model = User
     template_name = 'mainapp/index.html'
+
+
+class ColorListView(ListView):
+    model = User
+    template_name = 'mainapp/ral_colors.html'
+
+
+class ServiceListView(ListView):
+    model = User
+    template_name = 'mainapp/services.html'
