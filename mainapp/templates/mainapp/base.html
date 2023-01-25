@@ -21,64 +21,77 @@
 
     <link rel="stylesheet" href="{% static 'css/flaticon.css' %}">
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
+
   </head>
 <body>
-{% block 'content'%}
-{% endblock %}
+
+    {% include 'mainapp/include/header.html'%}
+    {% block 'content'%}
+    {% endblock %}
 
 
     <footer class="footer ftco-section">
       <div class="container">
         <div class="row mb-5">
           <div class="col-md-6 col-lg">
-            <div class="ftco-footer-widget mb-4">
-              <h2 class="logo"><a href="#"><span class="flaticon-roof-2 mr-2"></span>Roofing</a></h2>
+            <div class="ftco-footer-widget mb-15">
+              <h2 class="logo"><a href="#">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-house" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd" d="M2 13.5V7h1v6.5a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5V7h1v6.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5zm11-11V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/>
+                      <path fill-rule="evenodd" d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z"/>
+                    </svg>&nbsp;
+                  Загибка</a></h2>
               <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
               <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-4">
-                <li class="ftco-animate"><a href="#"><span class="fa fa-twitter"></span></a></li>
-                <li class="ftco-animate"><a href="#"><span class="fa fa-facebook"></span></a></li>
-                <li class="ftco-animate"><a href="#"><span class="fa fa-instagram"></span></a></li>
+                <li class="ftco-animate"><a href="#"><span class="fa fa-vk"></span></a></li>
+                <li class="ftco-animate"><a href="https://wa.me/79251393151"><span class="fa fa-whatsapp"></span></a></li>
+<!--                <li class="ftco-animate"><a href="#"><span class="fa fa-instagram"></span></a></li>-->
               </ul>
             </div>
           </div>
+<!--          <div class="col-md-6 col-lg">-->
+<!--            <div class="ftco-footer-widget mb-4 ml-md-5">-->
+<!--              <h2 class="ftco-heading-2">Services</h2>-->
+<!--              <ul class="list-unstyled">-->
+<!--                <li><a href="#" class="py-1 d-block"><span class="fa fa-check mr-3"></span>Skylights</a></li>-->
+<!--                <li><a href="#" class="py-1 d-block"><span class="fa fa-check mr-3"></span>Waterproofing</a></li>-->
+<!--                <li><a href="#" class="py-1 d-block"><span class="fa fa-check mr-3"></span>Industrial Roofing</a></li>-->
+<!--                <li><a href="#" class="py-1 d-block"><span class="fa fa-check mr-3"></span>Residential Roofing</a></li>-->
+<!--                <li><a href="#" class="py-1 d-block"><span class="fa fa-check mr-3"></span>Gutter Cleaning</a></li>-->
+<!--                <li><a href="#" class="py-1 d-block"><span class="fa fa-check mr-3"></span>Commercial Roofing</a></li>-->
+<!--              </ul>-->
+<!--            </div>-->
+<!--          </div>-->
           <div class="col-md-6 col-lg">
-            <div class="ftco-footer-widget mb-4 ml-md-5">
-              <h2 class="ftco-heading-2">Services</h2>
-              <ul class="list-unstyled">
-                <li><a href="#" class="py-1 d-block"><span class="fa fa-check mr-3"></span>Skylights</a></li>
-                <li><a href="#" class="py-1 d-block"><span class="fa fa-check mr-3"></span>Waterproofing</a></li>
-                <li><a href="#" class="py-1 d-block"><span class="fa fa-check mr-3"></span>Industrial Roofing</a></li>
-                <li><a href="#" class="py-1 d-block"><span class="fa fa-check mr-3"></span>Residential Roofing</a></li>
-                <li><a href="#" class="py-1 d-block"><span class="fa fa-check mr-3"></span>Gutter Cleaning</a></li>
-                <li><a href="#" class="py-1 d-block"><span class="fa fa-check mr-3"></span>Commercial Roofing</a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg">
-             <div class="ftco-footer-widget mb-4">
-              <h2 class="ftco-heading-2">Business Hours</h2>
+             <div class="ftco-footer-widget mb-15">
+              <h2 class="ftco-heading-2">Часы работы</h2>
               <div class="opening-hours">
-              	<h4>Opening Days:</h4>
+              	<h4>Рабочие дни:</h4>
               	<p class="pl-3">
-              		<span>Monday – Friday : 9am to 20 pm</span>
-              		<span>Saturday : 9am to 17 pm</span>
+              		<span>Пн – Пт : 9:00 - 20:00</span><br>
+              		<span>Сб : 9:00 - 17:00</span>
               	</p>
-              	<h4>Vacations:</h4>
+              	<h4>Выходные дни:</h4>
               	<p class="pl-3">
-              		<span>All Sunday Days</span>
-              		<span>All Official Holidays</span>
+              		<span>Вс - </span>
+              		<span>Не рабочий день</span>
               	</p>
               </div>
             </div>
           </div>
           <div class="col-md-6 col-lg">
-            <div class="ftco-footer-widget mb-4">
-            	<h2 class="ftco-heading-2">Contact information</h2>
+            <div class="ftco-footer-widget mb-15">
+            	<h2 class="ftco-heading-2">Контактная информация</h2>
             	<div class="block-23 mb-3">
 	              <ul>
-	                <li><span class="icon fa fa-map-marker"></span><span class="text">203 Fake St. Mountain View, San Francisco, California, USA</span></li>
-	                <li><a href="#"><span class="icon fa fa-phone"></span><span class="text">+2 392 3929 210</span></a></li>
-	                <li><a href="#"><span class="icon fa fa-paper-plane"></span><span class="text">info@yourdomain.com</span></a></li>
+	                <li><span class="icon fa fa-map-marker"></span><span class="text">г. Подольск, Московская обл.</span></li>
+	                <li><a href="tel:+79251393151"><span class="icon fa fa-phone"></span><span class="text">8(925) 139-31-51</span></a></li>
+	                <li><a href="mailto:zakazgibka@yandex.ru"><span class="icon fa fa-paper-plane"></span><span class="text">zakazgibka@yandex.ru</span></a></li>
 	              </ul>
 	            </div>
             </div>
@@ -87,7 +100,7 @@
         <div class="row">
           <div class="col-md-12 text-center">
 
-            <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            <p style="font-size: 10px;"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
   Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
   <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
           </div>
@@ -117,6 +130,7 @@
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
   <script src="{% static 'js/google-map.js' %}"></script>
   <script src="{% static 'js/main.js' %}"></script>
+
 
   </body>
 </html>

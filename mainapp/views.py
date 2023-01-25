@@ -11,3 +11,8 @@ class MainListView(ListView):
 class ColorListView(ListView):
     model = User
     template_name = 'mainapp/ral_colors.html'
+
+
+class ServiceListView(ListView):
+    model = User
+    template_name = 'mainapp/services.html'
