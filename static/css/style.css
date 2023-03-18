@@ -10043,12 +10043,29 @@ textarea.form-control {
     right: 0;
     transition-delay: 0s;
 }
-
+.dis-flex{
+    display: flex;
+}
 .dob-el{
     object-fit: cover;
     width: 85%;
     padding: 0 10%;
     margin: 0 7.5%;
+}
+
+.dob-el-2{
+    object-fit: cover;
+    width: 50%;
+    padding: 10px;
+    height: 430px;
+}
+
+.ta-c{
+    text-align: center;
+}
+.link-txt{
+    color: #acacb0;
+    font-weight: bold;
 }
 @media (max-width: 768px){
     .dob-el{
@@ -10087,11 +10104,17 @@ a.txt_over {
         left: -14%;
         font-size: 12px;
     }
+    .dob-el-2{
+        height: 250px;
+    }
 }
 @media (min-width: 390px) and (max-width: 592px){
     .tekst_sverhu_kartinki{
         left: -37%;
         font-size: 10px;
+    }
+    .dob-el-2{
+        height: 210px;
     }
 }
 @media (min-width: 320px) and (max-width: 390px){
@@ -10099,11 +10122,17 @@ a.txt_over {
         left: -42%;
         font-size: 9px;
     }
+    .dob-el-2{
+        height: 160px;
+    }
 }
 @media (min-width: 0px) and (max-width: 320px){
     .tekst_sverhu_kartinki{
         left: -60%;
         font-size: 9px;
+    }
+    .dob-el-2{
+        height: 140px;
     }
 }
 .button-color{

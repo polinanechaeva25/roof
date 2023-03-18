@@ -3,24 +3,24 @@
 
 {% block 'content'%}
 <section class="menu-wrap flex-md-column-reverse d-md-flex">
-    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
-        <div class="container">
+<!--    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">-->
+<!--        <div class="container">-->
 
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav"
-                    aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="fa fa-bars"></span> Меню
-            </button>
-            <div class="collapse navbar-collapse" id="ftco-nav">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active"><a href="{% url 'mainapp:index' %}" class="nav-link">Главная</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">О нас</a></li>
-                    <li class="nav-item"><a href="{% url 'mainapp:service' %}" class="nav-link">Услуги</a></li>
-                    <li class="nav-item"><a href="{% url 'mainapp:color' %}" class="nav-link">Цвета RAL</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">Контакты</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+<!--            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav"-->
+<!--                    aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">-->
+<!--                <span class="fa fa-bars"></span> Меню-->
+<!--            </button>-->
+<!--            <div class="collapse navbar-collapse" id="ftco-nav">-->
+<!--                <ul class="navbar-nav mr-auto">-->
+<!--                    <li class="nav-item active"><a href="{% url 'mainapp:index' %}" class="nav-link">Главная</a></li>-->
+<!--                    <li class="nav-item"><a href="#" class="nav-link">О нас</a></li>-->
+<!--                    <li class="nav-item"><a href="{% url 'mainapp:service' %}" class="nav-link">Услуги</a></li>-->
+<!--                    <li class="nav-item"><a href="{% url 'mainapp:color' %}" class="nav-link">Цвета RAL</a></li>-->
+<!--                    <li class="nav-item"><a href="#" class="nav-link">Контакты</a></li>-->
+<!--                </ul>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </nav>-->
 
     <div class="hero-wrap js-fullheight">
         <div class="home-slider js-fullheight owl-carousel">
@@ -58,10 +58,7 @@
                     <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-center">
                         <div class="col-md-8 text-center ftco-animate">
                             <div class="text w-100">
-                                <!--                                <h2>We care about your home</h2>-->
                                 <h1 class="mb-4">Доверяясь нам, Вы доверяетесь настоящим профессионалам</h1>
-
-                                <!--                                <p><a href="#" class="btn btn-primary">Book an appointment</a></p>-->
                             </div>
                         </div>
                     </div>
@@ -485,6 +482,93 @@
     </div>
 </section>
 
+
+<section class="ftco-section ftco-no-pt ftco-no-pb bg-light ftco-appointment">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="row justify-content-start py-5 pr-md-4">
+                    <div class="col-md-12 heading-section ftco-animate py-md-4">
+                        <h2 class="mb-15">Как заказать доборные элементы по вашему размеру?</h2>
+
+                        <h4 class="mb-15 ta-c">Сделать заказ очень просто, достаточно нарисовать необходимое изделие и указать несколько параметров.</h4>
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="row tabulation mt-4 ftco-animate">
+                                    <div class="col-md-12 pl-md-4">
+                                        <div class="tab-content">
+                                            <div class="tab-pane container p-0 active" id="services-1">
+                                                <ul>
+                                                    <li><span class="fa fa-check"></span>
+                                                        Название изделия
+                                                    </li>
+                                                    <li><span class="fa fa-check"></span>
+                                                        Толщину металла
+                                                    </li>
+                                                    <li><span class="fa fa-check"></span>
+                                                        Размеры сторон в миллиметрах
+                                                    </li>
+                                                    <li><span class="fa fa-check"></span>
+                                                        Покрытие - оцинкованное или полимерное
+                                                    </li>
+                                                    <li><span class="fa fa-check"></span>
+                                                        Цвет изделия по таблице Ral
+                                                    </li>
+                                                    <li><span class="fa fa-check"></span>
+                                                        Необходимость ребра жесткости (завальцовки) по краям.
+                                                    </li>
+                                                    <li><span class="fa fa-check"></span>
+                                                        Колличество изделий в метрах
+                                                    </li>
+                                                    <li><span class="fa fa-check"></span>
+                                                        Срок поставки
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tabulation-2 mt-4 dis-flex">
+                            <img src="{% static 'images/custom_det_1.jpeg' %}" class="dob-el-2">
+                            <img src="{% static 'images/custom_det_2.jpg' %}" class="dob-el-2">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="ftco-section">
+    <div class="container">
+        <div class="row justify-content-center mb-5">
+            <div class="col-md-12 heading-section ftco-animate py-md-4">
+                <h2 class="mb-15">Как отправить?</h2>
+                <p class="ta-c">В нижней части сайта найдите раздел "Контакты". Заполните форму - имя, e-mail, тема,
+                    в поле фотография нажмите вбрать  в появившемся окне найдите ранее сохраненное фото
+                    или скан нарисованного элемента и щелкните по нему два раза (документ автоматически прикрепиться).
+                    После этого нажмите кнопку отправить.</p>
+                <span class='ion-ios-arrow-back'></span>
+                <h2 class="mb-15">Как узнать стоимость?</h2>
+                <p class="ta-c">Свяжитесь с нами через контактную форму на сайте ниже или напишите нам на почту
+                    <a class="link-txt" href="mailto:zakazgibka@yandex.ru"><span class="text">zakazgibka@yandex.ru</span></a>
+                    Так же Вы можете проконсультироваться со специалистом по номеру телефона
+                    <a class="link-txt" href="tel:+79251393151"><span class="text">8(925) 139-31-51</span></a>
+                </p>
+                <span class='ion-ios-arrow-back'></span>
+            </div>
+    </div>
+        <div class="col-lg-3 d-flex align-items-stretch">
+            <div class="img" style="background-image: url(/static/images/about.jpg);"></div>
+        </div>
+    </div>
+</section>
+
+
 <section class="ftco-section bg-light">
     <div class="container">
         <div class="row justify-content-center">
@@ -574,6 +658,4 @@
         </div>
     </div>
 </section>
-
-
 {% endblock %}
