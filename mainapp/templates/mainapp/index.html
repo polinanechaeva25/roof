@@ -495,7 +495,8 @@
             <div class="col-md-7 d-flex">
               <div class="contact-wrap w-100 p-md-5 p-4">
                 <h3 class="mb-15">Свяжитесь с нами</h3>
-                <form method="POST" id="contactForm" class="contactForm">
+                <form action="{% url 'mainapp:send_email' %}" method="post" enctype="multipart/form-data" id="contactForm" class="contactForm">
+                    {% csrf_token %}
                   <div class="row">
                     <div class="col-md-6">
                       <div class="form-group">
