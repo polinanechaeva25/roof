@@ -26,18 +26,19 @@ class EmailView(View):
 
     def post(self, request):
         try:
-            name = request.POST.get('name')
-            email = request.POST.get('email')
-            message = request.POST.get('message')
-            subject = request.POST.get('subject')
-            file = request.FILES.get('file')
+            name = request.POST.get('name', 'No name')
+            email = request.POST.get('email', 'No email')
+            message = request.POST.get('message', 'No message')
+            subject = request.POST.get('subject', 'No subject')
+            file = request.FILES.get('file', None)
 
             title = f'САЙТ - новое письмо. {subject}'
             email_body = f'Имя: {name}\nEmail: {email}\nСообщение: {message}\n'
             logger.error('SENDING EMAIL')
             mail = EmailMessage(title, email_body, settings.EMAIL_HOST_USER,
                                 ['justitdevelopment@gmail.com'])  # justitdevelopment@gmail.com
-            mail.attach(file.name, file.read(), file.content_type)
+            if file:
+                mail.attach(file.name, file.read(), file.content_type)
             mail.send()
         except Exception as e:
             logger.fatal('ERROR:', e)

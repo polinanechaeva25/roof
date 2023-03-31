@@ -17,3 +17,21 @@ Array.prototype.forEach.call(inputs, function (input) {
       label.querySelector('.input__file-button-text').innerText = labelVal;
   });
 });
+
+const file = document.getElementById('file')
+
+file.addEventListener('change', (event) => {
+  const target = event.target
+  	if (target.files && target.files[0]) {
+
+      /*Maximum allowed size in bytes
+        20MB Example
+        Change first operand(multiplier) for your needs*/
+      const maxAllowedSize = 20 * 1024 * 1024;
+      if (target.files[0].size > maxAllowedSize) {
+      	// Here you can ask your users to load correct file
+       	alert('Максимальный размер файла - это 20MB!')
+       	target.value = ''
+      }
+  }
+})
