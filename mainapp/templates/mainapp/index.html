@@ -3,24 +3,6 @@
 
 {% block 'content'%}
 <section class="menu-wrap flex-md-column-reverse d-md-flex">
-<!--    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">-->
-<!--        <div class="container">-->
-
-<!--            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav"-->
-<!--                    aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">-->
-<!--                <span class="fa fa-bars"></span> Меню-->
-<!--            </button>-->
-<!--            <div class="collapse navbar-collapse" id="ftco-nav">-->
-<!--                <ul class="navbar-nav mr-auto">-->
-<!--                    <li class="nav-item active"><a href="{% url 'mainapp:index' %}" class="nav-link">Главная</a></li>-->
-<!--                    <li class="nav-item"><a href="#" class="nav-link">О нас</a></li>-->
-<!--                    <li class="nav-item"><a href="{% url 'mainapp:service' %}" class="nav-link">Услуги</a></li>-->
-<!--                    <li class="nav-item"><a href="{% url 'mainapp:color' %}" class="nav-link">Цвета RAL</a></li>-->
-<!--                    <li class="nav-item"><a href="#" class="nav-link">Контакты</a></li>-->
-<!--                </ul>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--    </nav>-->
 
     <div class="hero-wrap js-fullheight">
         <div class="home-slider js-fullheight owl-carousel">
@@ -30,9 +12,7 @@
                     <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-center">
                         <div class="col-md-10 text-center ftco-animate">
                             <div class="text w-100">
-                                <h2></h2>
                                 <h1 class="mb-4">Гибка доборных элементов для кровли и фасадов</h1>
-                                <!--                                <p><a href="#" class="btn btn-primary">Book an appointment</a></p>-->
                             </div>
                         </div>
                     </div>
@@ -44,9 +24,7 @@
                     <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-center">
                         <div class="col-md-8 text-center ftco-animate">
                             <div class="text w-100">
-                                <!--                                <h2>We care about your home</h2>-->
                                 <h1 class="mb-4">Используем только надежные материалы</h1>
-                                <!--                                <p><a href="#" class="btn btn-primary">Book an appointment</a></p>-->
                             </div>
                         </div>
                     </div>
@@ -84,10 +62,11 @@
                             <img src="{% static 'images/dob-el-2.jpg' %}" class="dob-el">
                             <div class="tab-content rounded mt-2">
                                 <div class="tab-pane container p-0 active" id="home1">
-                                    <p>Производим, как стандартные доборные элементы кровли и фасада, а также, на заказ,
-                                        по эскизу заказчика нестандартных цветов, размеров и толщины.</p>
+                                    <p>
+                                        Производим, как стандартные доборные элементы кровли и фасада, а также, на заказ,
+                                        по эскизу заказчика нестандартных цветов, размеров и толщины.
+                                    </p>
                                 </div>
-
                             </div>
                         </div>
                     </div>
@@ -205,7 +184,6 @@
                     </a>
                 </div>
             </div>
-
             <a href="{% static 'images/example-5.jpg' %}"
                class="icon image-popup d-flex justify-content-center align-items-center"></a>
             <a href="{% static 'images/example-6.jpg' %}"
@@ -217,445 +195,389 @@
 </section>
 
 <section class="ftco-section">
-    <div class="container">
-        <div class="row justify-content-center pb-5 mb-3">
-            <div class="col-md-7 heading-section text-center ftco-animate">
-                <span class="subheading">Мы гарантируем качество наши услуг</span>
-                <h2>Условия работы</h2>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-4 services ftco-animate">
-                <div class="d-block d-flex">
-                    <div class="icon d-flex justify-content-center align-items-center">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor"
-                             class="bi bi-house-gear-fill" viewBox="0 0 16 16">
-                            <path d="M7.293 1.5a1 1 0 0 1 1.414 0L11 3.793V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v3.293l2.354 2.353a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5Z"
-                                  style="color: white;"/>
-                            <path d="M11.07 9.047a1.5 1.5 0 0 0-1.742.26l-.02.021a1.5 1.5 0 0 0-.261 1.742 1.5 1.5 0 0 0 0 2.86 1.504 1.504 0 0 0-.12 1.07H3.5A1.5 1.5 0 0 1 2 13.5V9.293l6-6 4.724 4.724a1.5 1.5 0 0 0-1.654 1.03Z"
-                                  style="color: white;"/>
-                            <path d="m13.158 9.608-.043-.148c-.181-.613-1.049-.613-1.23 0l-.043.148a.64.64 0 0 1-.921.382l-.136-.074c-.561-.306-1.175.308-.87.869l.075.136a.64.64 0 0 1-.382.92l-.148.045c-.613.18-.613 1.048 0 1.229l.148.043a.64.64 0 0 1 .382.921l-.074.136c-.306.561.308 1.175.869.87l.136-.075a.64.64 0 0 1 .92.382l.045.149c.18.612 1.048.612 1.229 0l.043-.15a.64.64 0 0 1 .921-.38l.136.074c.561.305 1.175-.309.87-.87l-.075-.136a.64.64 0 0 1 .382-.92l.149-.044c.612-.181.612-1.049 0-1.23l-.15-.043a.64.64 0 0 1-.38-.921l.074-.136c.305-.561-.309-1.175-.87-.87l-.136.075a.64.64 0 0 1-.92-.382ZM12.5 14a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Z"
-                                  style="color: white;"/>
-                        </svg>
-                    </div>
-                    <div class="media-body pl-3">
-                        <h3 class="heading">Работаем по чертежам</h3>
-                        <p>Выполним все работы четко по поставленному ТЗ</p>
-                    </div>
-                </div>
-                <div class="d-block d-flex">
-                    <div class="icon d-flex justify-content-center align-items-center">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor"
-                             class="bi bi-hourglass-split" viewBox="0 0 16 16">
-                            <path d="M2.5 15a.5.5 0 1 1 0-1h1v-1a4.5 4.5 0 0 1 2.557-4.06c.29-.139.443-.377.443-.59v-.7c0-.213-.154-.451-.443-.59A4.5 4.5 0 0 1 3.5 3V2h-1a.5.5 0 0 1 0-1h11a.5.5 0 0 1 0 1h-1v1a4.5 4.5 0 0 1-2.557 4.06c-.29.139-.443.377-.443.59v.7c0 .213.154.451.443.59A4.5 4.5 0 0 1 12.5 13v1h1a.5.5 0 0 1 0 1h-11zm2-13v1c0 .537.12 1.045.337 1.5h6.326c.216-.455.337-.963.337-1.5V2h-7zm3 6.35c0 .701-.478 1.236-1.011 1.492A3.5 3.5 0 0 0 4.5 13s.866-1.299 3-1.48V8.35zm1 0v3.17c2.134.181 3 1.48 3 1.48a3.5 3.5 0 0 0-1.989-3.158C8.978 9.586 8.5 9.052 8.5 8.351z"
-                                  style="color: white;"/>
-                        </svg>
-                    </div>
-                    <div class="media-body pl-3">
-                        <h3 class="heading">Сроки изготовлния</h3>
-                        <p>Мы ценим Ваше и свое время, поэтому выполняем работу быстро и качественно. Срок выполнения
-                            заказа - 1 день!</p>
-                    </div>
-                </div>
-
-            </div>
-            <div class="col-md-4 services ftco-animate">
-                <div class="d-block d-flex">
-                    <div class="icon d-flex justify-content-center align-items-center">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor"
-                             class="bi bi-truck" viewBox="0 0 16 16">
-                            <path d="M0 3.5A1.5 1.5 0 0 1 1.5 2h9A1.5 1.5 0 0 1 12 3.5V5h1.02a1.5 1.5 0 0 1 1.17.563l1.481 1.85a1.5 1.5 0 0 1 .329.938V10.5a1.5 1.5 0 0 1-1.5 1.5H14a2 2 0 1 1-4 0H5a2 2 0 1 1-3.998-.085A1.5 1.5 0 0 1 0 10.5v-7zm1.294 7.456A1.999 1.999 0 0 1 4.732 11h5.536a2.01 2.01 0 0 1 .732-.732V3.5a.5.5 0 0 0-.5-.5h-9a.5.5 0 0 0-.5.5v7a.5.5 0 0 0 .294.456zM12 10a2 2 0 0 1 1.732 1h.768a.5.5 0 0 0 .5-.5V8.35a.5.5 0 0 0-.11-.312l-1.48-1.85A.5.5 0 0 0 13.02 6H12v4zm-9 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm9 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"
-                                  style="color: white;"/>
-                        </svg>
-                    </div>
-                    <div class="media-body pl-3">
-                        <h3 class="heading">Доставка</h3>
-                        <p>Наша компания может отправить изделия любой удобной для вас службой доставки, стоимость будет
-                            зависеть от компании перевозчика</p>
-                    </div>
-                </div>
-                <div class="d-block d-flex">
-                    <div class="icon d-flex justify-content-center align-items-center">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor"
-                             class="bi bi-credit-card-2-back" viewBox="0 0 16 16" style="color: white;">
-                            <path d="M11 5.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-1z"/>
-                            <path d="M2 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H2zm13 2v5H1V4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1zm-1 9H2a1 1 0 0 1-1-1v-1h14v1a1 1 0 0 1-1 1z"
-                                  style="color: white;"/>
-                        </svg>
-                    </div>
-                    <div class="media-body pl-3">
-                        <h3 class="heading">Спсобы оплаты</h3>
-                        <p>На данный момент Вы можете оплатить наши услуги переводом, через банковское приложение или
-                            наличными при встрече</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-4 services ftco-animate">
-                <div class="d-block d-flex">
-                    <div class="icon d-flex justify-content-center align-items-center">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor"
-                             class="bi bi-sliders2-vertical" viewBox="0 0 16 16">
-                            <path fill-rule="evenodd"
-                                  d="M0 10.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 0-1H3V1.5a.5.5 0 0 0-1 0V10H.5a.5.5 0 0 0-.5.5ZM2.5 12a.5.5 0 0 0-.5.5v2a.5.5 0 0 0 1 0v-2a.5.5 0 0 0-.5-.5Zm3-6.5A.5.5 0 0 0 6 6h1.5v8.5a.5.5 0 0 0 1 0V6H10a.5.5 0 0 0 0-1H6a.5.5 0 0 0-.5.5ZM8 1a.5.5 0 0 0-.5.5v2a.5.5 0 0 0 1 0v-2A.5.5 0 0 0 8 1Zm3 9.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 0-1H14V1.5a.5.5 0 0 0-1 0V10h-1.5a.5.5 0 0 0-.5.5Zm2.5 1.5a.5.5 0 0 0-.5.5v2a.5.5 0 0 0 1 0v-2a.5.5 0 0 0-.5-.5Z"
-                                  style="color: white;"/>
-                        </svg>
-                    </div>
-                    <div class="media-body pl-3">
-                        <h3 class="heading">Предоплата</h3>
-                        <p>Мы выполняем услуги только при предоставлении аванса в размере 50%, оставшаяся часть
-                            оплачивается после предоставления услуги</p>
-                    </div>
-                </div>
-                <!--                <div class="d-block d-flex">-->
-                <!--                    <div class="icon d-flex justify-content-center align-items-center">-->
-                <!--                        <span class="flaticon-roof-4"></span>-->
-                <!--                    </div>-->
-                <!--                    <div class="media-body pl-3">-->
-                <!--                        <h3 class="heading">Commercial Roofing</h3>-->
-                <!--                        <p>Even the all-powerful Pointing has no control about the blind texts it is an almost-->
-                <!--                            unorthographic.</p>-->
-                <!--                        <p><a href="#" class="btn-custom">Read more</a></p>-->
-                <!--                    </div>-->
-                <!--                </div>-->
-            </div>
-        </div>
+  <div class="container">
+    <div class="row justify-content-center pb-5 mb-3">
+      <div class="col-md-7 heading-section text-center ftco-animate">
+        <span class="subheading">Мы гарантируем качество наши услуг</span>
+        <h2>Условия работы</h2>
+      </div>
     </div>
+    <div class="row">
+        <div class="col-md-4 services ftco-animate">
+          <div class="d-block d-flex">
+            <div class="icon d-flex justify-content-center align-items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor"
+                 class="bi bi-house-gear-fill" viewBox="0 0 16 16">
+              <path d="M7.293 1.5a1 1 0 0 1 1.414 0L11 3.793V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v3.293l2.354 2.353a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5Z"
+                      style="color: white;"/>
+              <path d="M11.07 9.047a1.5 1.5 0 0 0-1.742.26l-.02.021a1.5 1.5 0 0 0-.261 1.742 1.5 1.5 0 0 0 0 2.86 1.504 1.504 0 0 0-.12 1.07H3.5A1.5 1.5 0 0 1 2 13.5V9.293l6-6 4.724 4.724a1.5 1.5 0 0 0-1.654 1.03Z"
+                      style="color: white;"/>
+              <path d="m13.158 9.608-.043-.148c-.181-.613-1.049-.613-1.23 0l-.043.148a.64.64 0 0 1-.921.382l-.136-.074c-.561-.306-1.175.308-.87.869l.075.136a.64.64 0 0 1-.382.92l-.148.045c-.613.18-.613 1.048 0 1.229l.148.043a.64.64 0 0 1 .382.921l-.074.136c-.306.561.308 1.175.869.87l.136-.075a.64.64 0 0 1 .92.382l.045.149c.18.612 1.048.612 1.229 0l.043-.15a.64.64 0 0 1 .921-.38l.136.074c.561.305 1.175-.309.87-.87l-.075-.136a.64.64 0 0 1 .382-.92l.149-.044c.612-.181.612-1.049 0-1.23l-.15-.043a.64.64 0 0 1-.38-.921l.074-.136c.305-.561-.309-1.175-.87-.87l-.136.075a.64.64 0 0 1-.92-.382ZM12.5 14a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Z"
+                      style="color: white;"/>
+              </svg>
+            </div>
+            <div class="media-body pl-3">
+              <h3 class="heading">Работаем по чертежам</h3>
+              <p>Выполним все работы четко по поставленному ТЗ</p>
+            </div>
+          </div>
+          <div class="d-block d-flex">
+            <div class="icon d-flex justify-content-center align-items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor"
+                 class="bi bi-hourglass-split" viewBox="0 0 16 16">
+                <path d="M2.5 15a.5.5 0 1 1 0-1h1v-1a4.5 4.5 0 0 1 2.557-4.06c.29-.139.443-.377.443-.59v-.7c0-.213-.154-.451-.443-.59A4.5 4.5 0 0 1 3.5 3V2h-1a.5.5 0 0 1 0-1h11a.5.5 0 0 1 0 1h-1v1a4.5 4.5 0 0 1-2.557 4.06c-.29.139-.443.377-.443.59v.7c0 .213.154.451.443.59A4.5 4.5 0 0 1 12.5 13v1h1a.5.5 0 0 1 0 1h-11zm2-13v1c0 .537.12 1.045.337 1.5h6.326c.216-.455.337-.963.337-1.5V2h-7zm3 6.35c0 .701-.478 1.236-1.011 1.492A3.5 3.5 0 0 0 4.5 13s.866-1.299 3-1.48V8.35zm1 0v3.17c2.134.181 3 1.48 3 1.48a3.5 3.5 0 0 0-1.989-3.158C8.978 9.586 8.5 9.052 8.5 8.351z"
+                      style="color: white;"/>
+              </svg>
+            </div>
+            <div class="media-body pl-3">
+              <h3 class="heading">Сроки изготовлния</h3>
+              <p>Мы ценим Ваше и свое время, поэтому выполняем работу быстро и качественно. Срок выполнения
+                заказа - 1 день!</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 services ftco-animate">
+          <div class="d-block d-flex">
+            <div class="icon d-flex justify-content-center align-items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor"
+                 class="bi bi-truck" viewBox="0 0 16 16">
+                <path d="M0 3.5A1.5 1.5 0 0 1 1.5 2h9A1.5 1.5 0 0 1 12 3.5V5h1.02a1.5 1.5 0 0 1 1.17.563l1.481 1.85a1.5 1.5 0 0 1 .329.938V10.5a1.5 1.5 0 0 1-1.5 1.5H14a2 2 0 1 1-4 0H5a2 2 0 1 1-3.998-.085A1.5 1.5 0 0 1 0 10.5v-7zm1.294 7.456A1.999 1.999 0 0 1 4.732 11h5.536a2.01 2.01 0 0 1 .732-.732V3.5a.5.5 0 0 0-.5-.5h-9a.5.5 0 0 0-.5.5v7a.5.5 0 0 0 .294.456zM12 10a2 2 0 0 1 1.732 1h.768a.5.5 0 0 0 .5-.5V8.35a.5.5 0 0 0-.11-.312l-1.48-1.85A.5.5 0 0 0 13.02 6H12v4zm-9 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm9 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"
+                      style="color: white;"/>
+              </svg>
+            </div>
+            <div class="media-body pl-3">
+              <h3 class="heading">Доставка</h3>
+              <p>Наша компания может отправить изделия любой удобной для вас службой доставки, стоимость будет
+                    зависеть от компании перевозчика</p>
+            </div>
+          </div>
+          <div class="d-block d-flex">
+            <div class="icon d-flex justify-content-center align-items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor"
+                 class="bi bi-credit-card-2-back" viewBox="0 0 16 16" style="color: white;">
+                <path d="M11 5.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-1z"/>
+                <path d="M2 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H2zm13 2v5H1V4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1zm-1 9H2a1 1 0 0 1-1-1v-1h14v1a1 1 0 0 1-1 1z"
+                      style="color: white;"/>
+              </svg>
+            </div>
+            <div class="media-body pl-3">
+              <h3 class="heading">Спсобы оплаты</h3>
+              <p>На данный момент Вы можете оплатить наши услуги переводом, через банковское приложение или
+                  наличными при встрече</p>
+            </div>
+          </div>
+        </div>
+      <div class="col-md-4 services ftco-animate">
+        <div class="d-block d-flex">
+          <div class="icon d-flex justify-content-center align-items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor"
+                 class="bi bi-sliders2-vertical" viewBox="0 0 16 16">
+              <path fill-rule="evenodd"
+                  d="M0 10.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 0-1H3V1.5a.5.5 0 0 0-1 0V10H.5a.5.5 0 0 0-.5.5ZM2.5 12a.5.5 0 0 0-.5.5v2a.5.5 0 0 0 1 0v-2a.5.5 0 0 0-.5-.5Zm3-6.5A.5.5 0 0 0 6 6h1.5v8.5a.5.5 0 0 0 1 0V6H10a.5.5 0 0 0 0-1H6a.5.5 0 0 0-.5.5ZM8 1a.5.5 0 0 0-.5.5v2a.5.5 0 0 0 1 0v-2A.5.5 0 0 0 8 1Zm3 9.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 0-1H14V1.5a.5.5 0 0 0-1 0V10h-1.5a.5.5 0 0 0-.5.5Zm2.5 1.5a.5.5 0 0 0-.5.5v2a.5.5 0 0 0 1 0v-2a.5.5 0 0 0-.5-.5Z"
+                  style="color: white;"/>
+            </svg>
+          </div>
+          <div class="media-body pl-3">
+            <h3 class="heading">Предоплата</h3>
+            <p>Мы выполняем услуги только при предоставлении аванса в размере 50%, оставшаяся часть
+                оплачивается после предоставления услуги</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
 
 <section class="ftco-section ftco-no-pt ftco-no-pb bg-light ftco-appointment">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12">
-                <div class="row justify-content-start py-5 pr-md-4">
-                    <div class="col-md-12 heading-section ftco-animate py-md-4">
-                        <h2 class="mb-15">Порошковая покраска</h2>
-                        <p>
-                            RAL — международная система соответствия цветов, востребованная сегодня практически во всех
-                            отраслях. Стандарт занял доминирующее положение в промышленности, торговле, архитектуре и
-                            дизайне. Ведущие российские и западные компании используют цвета по RAL в своём
-                            производстве.
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="row justify-content-start py-5 pr-md-4">
+          <div class="col-md-12 heading-section ftco-animate py-md-4">
+            <h2 class="mb-15">Порошковая покраска</h2>
+            <p>
+                RAL — международная система соответствия цветов, востребованная сегодня практически во всех
+                отраслях. Стандарт занял доминирующее положение в промышленности, торговле, архитектуре и
+                дизайне. Ведущие российские и западные компании используют цвета по RAL в своём
+                производстве.
 
-                            Цветовой стандарт RAL начинает свою историю с 1927 года, когда специалистами из «Управления
-                            по торговым стандартам» Германии была впервые разработана коллекция, состоящая на тот момент
-                            из 40 цветов. С тех пор палитра RAL постоянно расширяется. Компания выпускает каталоги
-                            цветов, веера, содержащие примеры красок по RAL, разрабатывает и добавляет новые
-                            образцы.
-                        </p>
-                        <div class="tabulation-2 mt-4">
-                            <img src="{% static 'images/painting.jpg' %}" class="dob-el">
-                        </div>
-
-                        <h2 class="mb-15">Хотите узнать о цветах покрития больше?!</h2>
-                        <p style="text-align: center;">Тогда переходите по ссылке ниже</p>
-<!--                        <div class="row">-->
-<!--                            <div class="col-lg-12">-->
-<!--                                <div class="row tabulation mt-4 ftco-animate">-->
-<!--                                    <div class="col-md-12 pl-md-4">-->
-<!--                                        <div class="tab-content">-->
-<!--                                            <div class="tab-pane container p-0 active" id="services-1">-->
-<!--                                                <ul>-->
-<!--                                                    <li><span class="fa fa-check"></span>-->
-<!--                                                        Возможность покраски продукции в любой цвет-->
-<!--                                                    </li>-->
-<!--                                                    <li><span class="fa fa-check"></span>-->
-<!--                                                        Защита от солнечных лучей (краска не выгорает)-->
-<!--                                                    </li>-->
-<!--                                                    <li><span class="fa fa-check"></span>Покрытие является-->
-<!--                                                        антивандальным-->
-<!--                                                    </li>-->
-<!--                                                    <li><span class="fa fa-check"></span>-->
-<!--                                                        Возможность покраски евроштакетника без отверстий-->
-<!--                                                    </li>-->
-<!--                                                </ul>-->
-<!--                                            </div>-->
-<!--                                        </div>-->
-<!--                                    </div>-->
-<!--                                </div>-->
-<!--                            </div>-->
-<!--                        </div>-->
-                        <div class="tabulation-2 mt-4">
-                            <div class="row button-color">
-                                <div class="col-md-12 text-center ftco-animate">
-                                    <div class="text w-100">
-                                        <p><a href="{% url 'mainapp:color' %}" class="btn btn-primary">Просмотреть
-                                            таблицу цветов</a></p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                Цветовой стандарт RAL начинает свою историю с 1927 года, когда специалистами из «Управления
+                по торговым стандартам» Германии была впервые разработана коллекция, состоящая на тот момент
+                из 40 цветов. С тех пор палитра RAL постоянно расширяется. Компания выпускает каталоги
+                цветов, веера, содержащие примеры красок по RAL, разрабатывает и добавляет новые
+                образцы.
+            </p>
+            <div class="tabulation-2 mt-4">
+              <img src="{% static 'images/painting.jpg' %}" class="dob-el">
             </div>
+            <h2 class="mb-15">Хотите узнать о цветах покрития больше?!</h2>
+            <p style="text-align: center;">Тогда переходите по ссылке ниже</p>
+            <div class="tabulation-2 mt-4">
+              <div class="row button-color">
+                <div class="col-md-12 text-center ftco-animate">
+                  <div class="text w-100">
+                    <p><a href="{% url 'mainapp:color' %}" class="btn btn-primary">Просмотреть таблицу цветов</a></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
+  </div>
 </section>
 
 <section class="ftco-section">
-    <div class="container">
-        <div class="row justify-content-center mb-5">
-            <div class="col-md-12 heading-section ftco-animate py-md-4">
-                <h2 class="mb-15">Почему выбирают нас</h2>
-            </div>
-        </div>
-
-        <div class="why_common">
-                <div class="why_el">
-                    <div class="why_card">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor"
-                             class="bi bi-gear" viewBox="0 0 16 16">
-                            <path d="M8 4.754a3.246 3.246 0 1 0 0 6.492 3.246 3.246 0 0 0 0-6.492zM5.754 8a2.246 2.246 0 1 1 4.492 0 2.246 2.246 0 0 1-4.492 0z"/>
-                            <path d="M9.796 1.343c-.527-1.79-3.065-1.79-3.592 0l-.094.319a.873.873 0 0 1-1.255.52l-.292-.16c-1.64-.892-3.433.902-2.54 2.541l.159.292a.873.873 0 0 1-.52 1.255l-.319.094c-1.79.527-1.79 3.065 0 3.592l.319.094a.873.873 0 0 1 .52 1.255l-.16.292c-.892 1.64.901 3.434 2.541 2.54l.292-.159a.873.873 0 0 1 1.255.52l.094.319c.527 1.79 3.065 1.79 3.592 0l.094-.319a.873.873 0 0 1 1.255-.52l.292.16c1.64.893 3.434-.902 2.54-2.541l-.159-.292a.873.873 0 0 1 .52-1.255l.319-.094c1.79-.527 1.79-3.065 0-3.592l-.319-.094a.873.873 0 0 1-.52-1.255l.16-.292c.893-1.64-.902-3.433-2.541-2.54l-.292.159a.873.873 0 0 1-1.255-.52l-.094-.319zm-2.633.283c.246-.835 1.428-.835 1.674 0l.094.319a1.873 1.873 0 0 0 2.693 1.115l.291-.16c.764-.415 1.6.42 1.184 1.185l-.159.292a1.873 1.873 0 0 0 1.116 2.692l.318.094c.835.246.835 1.428 0 1.674l-.319.094a1.873 1.873 0 0 0-1.115 2.693l.16.291c.415.764-.42 1.6-1.185 1.184l-.291-.159a1.873 1.873 0 0 0-2.693 1.116l-.094.318c-.246.835-1.428.835-1.674 0l-.094-.319a1.873 1.873 0 0 0-2.692-1.115l-.292.16c-.764.415-1.6-.42-1.184-1.185l.159-.291A1.873 1.873 0 0 0 1.945 8.93l-.319-.094c-.835-.246-.835-1.428 0-1.674l.319-.094A1.873 1.873 0 0 0 3.06 4.377l-.16-.292c-.415-.764.42-1.6 1.185-1.184l.292.159a1.873 1.873 0 0 0 2.692-1.115l.094-.319z"/>
-                        </svg>
-                        <br><br>
-                        <span class="why-we">Производство на современном импортном оборудовании</span>
-
-                    </div>
-                </div>
-
-                <div class="why_el">
-                    <div class="why_card">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor"
-                             class="bi bi-car-front" viewBox="0 0 16 16">
-                            <path d="M4 9a1 1 0 1 1-2 0 1 1 0 0 1 2 0Zm10 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0ZM6 8a1 1 0 0 0 0 2h4a1 1 0 1 0 0-2H6ZM4.862 4.276 3.906 6.19a.51.51 0 0 0 .497.731c.91-.073 2.35-.17 3.597-.17 1.247 0 2.688.097 3.597.17a.51.51 0 0 0 .497-.731l-.956-1.913A.5.5 0 0 0 10.691 4H5.309a.5.5 0 0 0-.447.276Z"/>
-                            <path d="M2.52 3.515A2.5 2.5 0 0 1 4.82 2h6.362c1 0 1.904.596 2.298 1.515l.792 1.848c.075.175.21.319.38.404.5.25.855.715.965 1.262l.335 1.679c.033.161.049.325.049.49v.413c0 .814-.39 1.543-1 1.997V13.5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-1.338c-1.292.048-2.745.088-4 .088s-2.708-.04-4-.088V13.5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-1.892c-.61-.454-1-1.183-1-1.997v-.413a2.5 2.5 0 0 1 .049-.49l.335-1.68c.11-.546.465-1.012.964-1.261a.807.807 0 0 0 .381-.404l.792-1.848ZM4.82 3a1.5 1.5 0 0 0-1.379.91l-.792 1.847a1.8 1.8 0 0 1-.853.904.807.807 0 0 0-.43.564L1.03 8.904a1.5 1.5 0 0 0-.03.294v.413c0 .796.62 1.448 1.408 1.484 1.555.07 3.786.155 5.592.155 1.806 0 4.037-.084 5.592-.155A1.479 1.479 0 0 0 15 9.611v-.413c0-.099-.01-.197-.03-.294l-.335-1.68a.807.807 0 0 0-.43-.563 1.807 1.807 0 0 1-.853-.904l-.792-1.848A1.5 1.5 0 0 0 11.18 3H4.82Z"/>
-                        </svg>
-                        <br><br>
-                        <span class="why-we">Удобное месторасположение производства. Легкая транспортная доступность</span>
-                    </div>
-
-
-                </div>
-                <div class="why_el">
-                    <div class="why_card">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor"
-                             class="bi bi-person-check" viewBox="0 0 16 16">
-                            <path d="M12.5 16a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7Zm1.679-4.493-1.335 2.226a.75.75 0 0 1-1.174.144l-.774-.773a.5.5 0 0 1 .708-.708l.547.548 1.17-1.951a.5.5 0 1 1 .858.514ZM11 5a3 3 0 1 1-6 0 3 3 0 0 1 6 0ZM8 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4Z"/>
-                            <path d="M8.256 14a4.474 4.474 0 0 1-.229-1.004H3c.001-.246.154-.986.832-1.664C4.484 10.68 5.711 10 8 10c.26 0 .507.009.74.025.226-.341.496-.65.804-.918C9.077 9.038 8.564 9 8 9c-5 0-6 3-6 4s1 1 1 1h5.256Z"/>
-                        </svg>
-                        <br><br>
-                        <span class="why-we">Высококвалифицированные специалисты на всех уровнях</span>
-
-                    </div>
-                </div>
-
-
-                <div class="why_el">
-                    <div class="why_card">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor"
-                             class="bi bi-card-checklist" viewBox="0 0 16 16">
-                            <path d="M14.5 3a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h13zm-13-1A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-13z"/>
-                            <path d="M7 5.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm-1.496-.854a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 1 1 .708-.708l.146.147 1.146-1.147a.5.5 0 0 1 .708 0zM7 9.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm-1.496-.854a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 0 1 .708-.708l.146.147 1.146-1.147a.5.5 0 0 1 .708 0z"/>
-                        </svg>
-                        <br><br>
-                        <span class="why-we">Полный производственный цикл</span>
-
-                    </div>
-                </div>
-                <div class="why_el">
-                    <div class="why_card">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor"
-                             class="bi bi-wallet2" viewBox="0 0 16 16">
-                            <path d="M12.136.326A1.5 1.5 0 0 1 14 1.78V3h.5A1.5 1.5 0 0 1 16 4.5v9a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 13.5v-9a1.5 1.5 0 0 1 1.432-1.499L12.136.326zM5.562 3H13V1.78a.5.5 0 0 0-.621-.484L5.562 3zM1.5 4a.5.5 0 0 0-.5.5v9a.5.5 0 0 0 .5.5h13a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 0-.5-.5h-13z"/>
-                        </svg>
-                        <br><br>
-                        <span class="why-we">Низкие цены, высокое качество, сжатые сроки</span>
-
-                    </div>
-                </div>
-                <div class="why_el">
-                    <div class="why_card">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor"
-                             class="bi bi-droplet-half" viewBox="0 0 16 16">
-                            <path fill-rule="evenodd"
-                                  d="M7.21.8C7.69.295 8 0 8 0c.109.363.234.708.371 1.038.812 1.946 2.073 3.35 3.197 4.6C12.878 7.096 14 8.345 14 10a6 6 0 0 1-12 0C2 6.668 5.58 2.517 7.21.8zm.413 1.021A31.25 31.25 0 0 0 5.794 3.99c-.726.95-1.436 2.008-1.96 3.07C3.304 8.133 3 9.138 3 10c0 0 2.5 1.5 5 .5s5-.5 5-.5c0-1.201-.796-2.157-2.181-3.7l-.03-.032C9.75 5.11 8.5 3.72 7.623 1.82z"/>
-                            <path fill-rule="evenodd"
-                                  d="M4.553 7.776c.82-1.641 1.717-2.753 2.093-3.13l.708.708c-.29.29-1.128 1.311-1.907 2.87l-.894-.448z"/>
-                        </svg>
-                        <br><br>
-                        <span class="why-we">Порошковая окраска в любой цвет по каталогу RAL</span>
-
-                    </div>
-                </div>
-        </div>
-
+  <div class="container">
+    <div class="row justify-content-center mb-5">
+      <div class="col-md-12 heading-section ftco-animate py-md-4">
+        <h2 class="mb-15">Почему выбирают нас</h2>
+      </div>
     </div>
+    <div class="why_common">
+      <div class="why_el">
+        <div class="why_card">
+          <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor"
+             class="bi bi-gear" viewBox="0 0 16 16">
+            <path d="M8 4.754a3.246 3.246 0 1 0 0 6.492 3.246 3.246 0 0 0 0-6.492zM5.754 8a2.246 2.246 0 1 1 4.492 0 2.246 2.246 0 0 1-4.492 0z"/>
+            <path d="M9.796 1.343c-.527-1.79-3.065-1.79-3.592 0l-.094.319a.873.873 0 0 1-1.255.52l-.292-.16c-1.64-.892-3.433.902-2.54 2.541l.159.292a.873.873 0 0 1-.52 1.255l-.319.094c-1.79.527-1.79 3.065 0 3.592l.319.094a.873.873 0 0 1 .52 1.255l-.16.292c-.892 1.64.901 3.434 2.541 2.54l.292-.159a.873.873 0 0 1 1.255.52l.094.319c.527 1.79 3.065 1.79 3.592 0l.094-.319a.873.873 0 0 1 1.255-.52l.292.16c1.64.893 3.434-.902 2.54-2.541l-.159-.292a.873.873 0 0 1 .52-1.255l.319-.094c1.79-.527 1.79-3.065 0-3.592l-.319-.094a.873.873 0 0 1-.52-1.255l.16-.292c.893-1.64-.902-3.433-2.541-2.54l-.292.159a.873.873 0 0 1-1.255-.52l-.094-.319zm-2.633.283c.246-.835 1.428-.835 1.674 0l.094.319a1.873 1.873 0 0 0 2.693 1.115l.291-.16c.764-.415 1.6.42 1.184 1.185l-.159.292a1.873 1.873 0 0 0 1.116 2.692l.318.094c.835.246.835 1.428 0 1.674l-.319.094a1.873 1.873 0 0 0-1.115 2.693l.16.291c.415.764-.42 1.6-1.185 1.184l-.291-.159a1.873 1.873 0 0 0-2.693 1.116l-.094.318c-.246.835-1.428.835-1.674 0l-.094-.319a1.873 1.873 0 0 0-2.692-1.115l-.292.16c-.764.415-1.6-.42-1.184-1.185l.159-.291A1.873 1.873 0 0 0 1.945 8.93l-.319-.094c-.835-.246-.835-1.428 0-1.674l.319-.094A1.873 1.873 0 0 0 3.06 4.377l-.16-.292c-.415-.764.42-1.6 1.185-1.184l.292.159a1.873 1.873 0 0 0 2.692-1.115l.094-.319z"/>
+          </svg><br><br>
+          <span class="why-we">Производство на современном импортном оборудовании</span>
+        </div>
+      </div>
+        <div class="why_el">
+          <div class="why_card">
+            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor"
+                 class="bi bi-car-front" viewBox="0 0 16 16">
+                <path d="M4 9a1 1 0 1 1-2 0 1 1 0 0 1 2 0Zm10 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0ZM6 8a1 1 0 0 0 0 2h4a1 1 0 1 0 0-2H6ZM4.862 4.276 3.906 6.19a.51.51 0 0 0 .497.731c.91-.073 2.35-.17 3.597-.17 1.247 0 2.688.097 3.597.17a.51.51 0 0 0 .497-.731l-.956-1.913A.5.5 0 0 0 10.691 4H5.309a.5.5 0 0 0-.447.276Z"/>
+                <path d="M2.52 3.515A2.5 2.5 0 0 1 4.82 2h6.362c1 0 1.904.596 2.298 1.515l.792 1.848c.075.175.21.319.38.404.5.25.855.715.965 1.262l.335 1.679c.033.161.049.325.049.49v.413c0 .814-.39 1.543-1 1.997V13.5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-1.338c-1.292.048-2.745.088-4 .088s-2.708-.04-4-.088V13.5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-1.892c-.61-.454-1-1.183-1-1.997v-.413a2.5 2.5 0 0 1 .049-.49l.335-1.68c.11-.546.465-1.012.964-1.261a.807.807 0 0 0 .381-.404l.792-1.848ZM4.82 3a1.5 1.5 0 0 0-1.379.91l-.792 1.847a1.8 1.8 0 0 1-.853.904.807.807 0 0 0-.43.564L1.03 8.904a1.5 1.5 0 0 0-.03.294v.413c0 .796.62 1.448 1.408 1.484 1.555.07 3.786.155 5.592.155 1.806 0 4.037-.084 5.592-.155A1.479 1.479 0 0 0 15 9.611v-.413c0-.099-.01-.197-.03-.294l-.335-1.68a.807.807 0 0 0-.43-.563 1.807 1.807 0 0 1-.853-.904l-.792-1.848A1.5 1.5 0 0 0 11.18 3H4.82Z"/>
+            </svg><br><br>
+            <span class="why-we">Удобное месторасположение производства. Легкая транспортная доступность</span>
+          </div>
+        </div>
+        <div class="why_el">
+          <div class="why_card">
+            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor"
+                 class="bi bi-person-check" viewBox="0 0 16 16">
+              <path d="M12.5 16a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7Zm1.679-4.493-1.335 2.226a.75.75 0 0 1-1.174.144l-.774-.773a.5.5 0 0 1 .708-.708l.547.548 1.17-1.951a.5.5 0 1 1 .858.514ZM11 5a3 3 0 1 1-6 0 3 3 0 0 1 6 0ZM8 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4Z"/>
+              <path d="M8.256 14a4.474 4.474 0 0 1-.229-1.004H3c.001-.246.154-.986.832-1.664C4.484 10.68 5.711 10 8 10c.26 0 .507.009.74.025.226-.341.496-.65.804-.918C9.077 9.038 8.564 9 8 9c-5 0-6 3-6 4s1 1 1 1h5.256Z"/>
+            </svg><br><br>
+            <span class="why-we">Высококвалифицированные специалисты на всех уровнях</span>
+          </div>
+        </div>
+        <div class="why_el">
+          <div class="why_card">
+            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor"
+                 class="bi bi-card-checklist" viewBox="0 0 16 16">
+              <path d="M14.5 3a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h13zm-13-1A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-13z"/>
+              <path d="M7 5.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm-1.496-.854a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 1 1 .708-.708l.146.147 1.146-1.147a.5.5 0 0 1 .708 0zM7 9.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm-1.496-.854a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 0 1 .708-.708l.146.147 1.146-1.147a.5.5 0 0 1 .708 0z"/>
+            </svg><br><br>
+            <span class="why-we">Полный производственный цикл</span>
+          </div>
+        </div>
+        <div class="why_el">
+          <div class="why_card">
+            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor"
+                 class="bi bi-wallet2" viewBox="0 0 16 16">
+              <path d="M12.136.326A1.5 1.5 0 0 1 14 1.78V3h.5A1.5 1.5 0 0 1 16 4.5v9a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 13.5v-9a1.5 1.5 0 0 1 1.432-1.499L12.136.326zM5.562 3H13V1.78a.5.5 0 0 0-.621-.484L5.562 3zM1.5 4a.5.5 0 0 0-.5.5v9a.5.5 0 0 0 .5.5h13a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 0-.5-.5h-13z"/>
+            </svg><br><br>
+            <span class="why-we">Низкие цены, высокое качество, сжатые сроки</span>
+          </div>
+        </div>
+        <div class="why_el">
+          <div class="why_card">
+            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor"
+                 class="bi bi-droplet-half" viewBox="0 0 16 16">
+              <path fill-rule="evenodd"
+                      d="M7.21.8C7.69.295 8 0 8 0c.109.363.234.708.371 1.038.812 1.946 2.073 3.35 3.197 4.6C12.878 7.096 14 8.345 14 10a6 6 0 0 1-12 0C2 6.668 5.58 2.517 7.21.8zm.413 1.021A31.25 31.25 0 0 0 5.794 3.99c-.726.95-1.436 2.008-1.96 3.07C3.304 8.133 3 9.138 3 10c0 0 2.5 1.5 5 .5s5-.5 5-.5c0-1.201-.796-2.157-2.181-3.7l-.03-.032C9.75 5.11 8.5 3.72 7.623 1.82z"/>
+              <path fill-rule="evenodd"
+                      d="M4.553 7.776c.82-1.641 1.717-2.753 2.093-3.13l.708.708c-.29.29-1.128 1.311-1.907 2.87l-.894-.448z"/>
+            </svg><br><br>
+            <span class="why-we">Порошковая окраска в любой цвет по каталогу RAL</span>
+          </div>
+        </div>
+    </div>
+  </div>
 </section>
 
 
 <section class="ftco-section ftco-no-pt ftco-no-pb bg-light ftco-appointment">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12">
-                <div class="row justify-content-start py-5 pr-md-4">
-                    <div class="col-md-12 heading-section ftco-animate py-md-4">
-                        <h2 class="mb-15">Как заказать доборные элементы по вашему размеру?</h2>
-
-                        <h4 class="mb-15 ta-c">Сделать заказ очень просто, достаточно нарисовать необходимое изделие и указать несколько параметров.</h4>
-                        <div class="row">
-                            <div class="col-lg-12">
-                                <div class="row tabulation mt-4 ftco-animate">
-                                    <div class="col-md-12 pl-md-4">
-                                        <div class="tab-content">
-                                            <div class="tab-pane container p-0 active" id="services-1">
-                                                <ul>
-                                                    <li><span class="fa fa-check"></span>
-                                                        Название изделия
-                                                    </li>
-                                                    <li><span class="fa fa-check"></span>
-                                                        Толщину металла
-                                                    </li>
-                                                    <li><span class="fa fa-check"></span>
-                                                        Размеры сторон в миллиметрах
-                                                    </li>
-                                                    <li><span class="fa fa-check"></span>
-                                                        Покрытие - оцинкованное или полимерное
-                                                    </li>
-                                                    <li><span class="fa fa-check"></span>
-                                                        Цвет изделия по таблице Ral
-                                                    </li>
-                                                    <li><span class="fa fa-check"></span>
-                                                        Необходимость ребра жесткости (завальцовки) по краям.
-                                                    </li>
-                                                    <li><span class="fa fa-check"></span>
-                                                        Колличество изделий в метрах
-                                                    </li>
-                                                    <li><span class="fa fa-check"></span>
-                                                        Срок поставки
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="tabulation-2 mt-4 dis-flex">
-                            <img src="{% static 'images/custom_det_1.jpeg' %}" class="dob-el-2">
-                            <img src="{% static 'images/custom_det_2.jpg' %}" class="dob-el-2">
-                        </div>
+ <div class="container">
+   <div class="row">
+     <div class="col-lg-12">
+       <div class="row justify-content-start py-5 pr-md-4">
+         <div class="col-md-12 heading-section ftco-animate py-md-4">
+            <h2 class="mb-15">Как заказать доборные элементы по вашему размеру?</h2>
+            <h4 class="mb-15 ta-c">Сделать заказ очень просто, достаточно нарисовать необходимое изделие и указать несколько параметров.</h4>
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="row tabulation mt-4 ftco-animate">
+                  <div class="col-md-12 pl-md-4">
+                    <div class="tab-content">
+                      <div class="tab-pane container p-0 active" id="services-1">
+                        <ul>
+                            <li><span class="fa fa-check"></span>
+                                Название изделия
+                            </li>
+                            <li><span class="fa fa-check"></span>
+                                Толщину металла
+                            </li>
+                            <li><span class="fa fa-check"></span>
+                                Размеры сторон в миллиметрах
+                            </li>
+                            <li><span class="fa fa-check"></span>
+                                Покрытие - оцинкованное или полимерное
+                            </li>
+                            <li><span class="fa fa-check"></span>
+                                Цвет изделия по таблице Ral
+                            </li>
+                            <li><span class="fa fa-check"></span>
+                                Необходимость ребра жесткости (завальцовки) по краям.
+                            </li>
+                            <li><span class="fa fa-check"></span>
+                                Колличество изделий в метрах
+                            </li>
+                            <li><span class="fa fa-check"></span>
+                                Срок поставки
+                            </li>
+                        </ul>
+                      </div>
                     </div>
+                  </div>
                 </div>
+              </div>
             </div>
-        </div>
-    </div>
+            <div class="tabulation-2 mt-4 dis-flex">
+              <img src="{% static 'images/custom_det_1.jpeg' %}" class="dob-el-2">
+              <img src="{% static 'images/custom_det_2.jpg' %}" class="dob-el-2">
+            </div>
+         </div>
+       </div>
+     </div>
+   </div>
+ </div>
 </section>
 
 
 <section class="ftco-section">
-    <div class="container">
-        <div class="row justify-content-center mb-5">
-            <div class="col-md-12 heading-section ftco-animate py-md-4">
-                <h2 class="mb-15">Как отправить?</h2>
-                <p class="ta-c">В нижней части сайта найдите раздел "Контакты". Заполните форму - имя, e-mail, тема,
-                    в поле фотография нажмите вбрать  в появившемся окне найдите ранее сохраненное фото
-                    или скан нарисованного элемента и щелкните по нему два раза (документ автоматически прикрепиться).
-                    После этого нажмите кнопку отправить.</p>
-                <span class='ion-ios-arrow-back'></span>
-                <h2 class="mb-15">Как узнать стоимость?</h2>
-                <p class="ta-c">Свяжитесь с нами через контактную форму на сайте ниже или напишите нам на почту
-                    <a class="link-txt" href="mailto:zakazgibka@yandex.ru"><span class="text">zakazgibka@yandex.ru</span></a>
-                    Так же Вы можете проконсультироваться со специалистом по номеру телефона
-                    <a class="link-txt" href="tel:+79251393151"><span class="text">8(925) 139-31-51</span></a>
-                </p>
-                <span class='ion-ios-arrow-back'></span>
-            </div>
+  <div class="container">
+    <div class="row justify-content-center mb-5">
+      <div class="col-md-12 heading-section ftco-animate py-md-4">
+        <h2 class="mb-15">Как отправить?</h2>
+        <p class="ta-c">В нижней части сайта найдите раздел "Контакты". Заполните форму - имя, e-mail, тема,
+            в поле фотография нажмите вбрать  в появившемся окне найдите ранее сохраненное фото
+            или скан нарисованного элемента и щелкните по нему два раза (документ автоматически прикрепиться).
+            После этого нажмите кнопку отправить.</p>
+        <span class='ion-ios-arrow-back'></span>
+        <h2 class="mb-15">Как узнать стоимость?</h2>
+        <p class="ta-c">Свяжитесь с нами через контактную форму на сайте ниже или напишите нам на почту
+            <a class="link-txt" href="mailto:zakazgibka@yandex.ru"><span class="text">zakazgibka@yandex.ru</span></a>.
+            <br>Так же Вы можете проконсультироваться со специалистом по номеру телефона
+            <a class="link-txt" href="tel:+79251393151"><span class="text">8(925) 139-31-51</span></a>.
+        </p>
+        <span class='ion-ios-arrow-back'></span>
+      </div>
     </div>
-        <div class="col-lg-3 d-flex align-items-stretch">
-            <div class="img" style="background-image: url(/static/images/about.jpg);"></div>
-        </div>
+    <div class="col-lg-3 d-flex align-items-stretch">
+      <div class="img" style="background-image: url(/static/images/about.jpg);"></div>
     </div>
+  </div>
 </section>
 
 
 <section class="ftco-section bg-light">
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-md-12">
-                <div class="wrapper">
-                    <div class="row no-gutters">
-                        <div class="col-md-7 d-flex">
-                            <div class="contact-wrap w-100 p-md-5 p-4">
-                                <h3 class="mb-15">Свяжитесь с нами</h3>
-                                <form method="POST" id="contactForm" class="contactForm">
-                                    <div class="row">
-                                        <div class="col-md-6">
-                                            <div class="form-group">
-                                                <input type="text" class="form-control" name="name" id="name"
-                                                       placeholder="Имя">
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <div class="form-group">
-                                                <input type="email" class="form-control" name="email" id="email"
-                                                       placeholder="Email">
-                                            </div>
-                                        </div>
-                                        <div class="col-md-12">
-                                            <div class="form-group">
-                                                <input type="text" class="form-control" name="subject" id="subject"
-                                                       placeholder="Тема">
-                                            </div>
-                                        </div>
-                                        <div class="col-md-12">
-                                            <div class="form-group">
-                                                <textarea name="message" class="form-control" id="message" cols="30"
-                                                          rows="7" placeholder="Сообщение"></textarea>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-12">
-                                            <div class="form-group">
-                                                <input type="submit" value="Отправить письмо" class="btn btn-primary">
-                                                <div class="submitting"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                        <div class="col-md-5 d-flex align-items-stretch">
-                            <div class="info-wrap bg-primary w-100 p-lg-5 p-4">
-                                <h3 class="mb-15 mt-md-4">Контакты</h3>
-                                <div class="dbox w-100 d-flex align-items-start">
-                                    <div class="icon d-flex align-items-center justify-content-center">
-                                        <span class="fa fa-map-marker"></span>
-                                    </div>
-                                    <div class="text pl-3">
-                                        <p><span>Адрес:</span> г. Подольск, Московская обл.</p>
-                                    </div>
-                                </div>
-                                <div class="dbox w-100 d-flex align-items-center">
-                                    <div class="icon d-flex align-items-center justify-content-center">
-                                        <span class="fa fa-phone"></span>
-                                    </div>
-                                    <div class="text pl-3">
-                                        <p><span>Телефон:</span> <a href="tel:+79251393151">8(925) 139-31-51</a></p>
-                                    </div>
-                                </div>
-                                <div class="dbox w-100 d-flex align-items-center">
-                                    <div class="icon d-flex align-items-center justify-content-center">
-                                        <span class="fa fa-paper-plane"></span>
-                                    </div>
-                                    <div class="text pl-3">
-                                        <p><span>Email:</span> <a href="mailto:zakazgibka@yandex.ru">zakazgibka@yandex.ru</a>
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="dbox w-100 d-flex align-items-center">
-                                    <div class="icon d-flex align-items-center justify-content-center">
-                                        <span class="fa fa-vk"></span>
-                                    </div>
-                                    <div class="text pl-3">
-                                        <p><span>VK</span> <a href="#">group.vk.ru</a></p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-12">
+        <div class="wrapper">
+          <div class="row no-gutters">
+            <div class="col-md-7 d-flex">
+              <div class="contact-wrap w-100 p-md-5 p-4">
+                <h3 class="mb-15">Свяжитесь с нами</h3>
+                <form method="POST" id="contactForm" class="contactForm">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <input type="text" class="form-control" name="name" id="name" placeholder="Имя">
+                      </div>
                     </div>
-                </div>
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <input type="email" class="form-control" name="email" id="email" placeholder="Email">
+                      </div>
+                    </div>
+                    <div class="col-md-12">
+                      <div class="form-group">
+                        <input type="text" class="form-control" name="subject" id="subject" placeholder="Тема">
+                      </div>
+                    </div>
+                    <div class="col-md-12">
+                      <div class="form-group input__wrapper">
+                        <input type="file" class="form-control input__file" name="file" id="file" placeholder="file">
+                        <label for="file" class="input__file-button">
+                          <span class="input__file-icon-wrapper"><img class="input__file-icon" src="{% static 'images/file.png' %}" alt="Выбрать файл" width="25"></span>
+                          <span class="input__file-button-text">Выберите файл</span>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="col-md-12">
+                      <div class="form-group">
+                        <textarea name="message" class="form-control" id="message" cols="30" rows="7" placeholder="Сообщение"></textarea>
+                      </div>
+                    </div>
+                    <div class="col-md-12">
+                      <div class="form-group">
+                        <input type="submit" value="Отправить письмо" class="btn btn-primary">
+                        <div class="submitting"></div>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
             </div>
+            <div class="col-md-5 d-flex align-items-stretch">
+              <div class="info-wrap bg-primary w-100 p-lg-5 p-4">
+                <h3 class="mb-15 mt-md-4">Контакты</h3>
+                <div class="dbox w-100 d-flex align-items-start">
+                  <div class="icon d-flex align-items-center justify-content-center">
+                    <span class="fa fa-map-marker"></span>
+                  </div>
+                  <div class="text pl-3">
+                    <p><span>Адрес:</span> г. Подольск, Московская обл.</p>
+                  </div>
+                </div>
+                <div class="dbox w-100 d-flex align-items-center">
+                  <div class="icon d-flex align-items-center justify-content-center">
+                    <span class="fa fa-phone"></span>
+                  </div>
+                  <div class="text pl-3">
+                    <p><span>Телефон:</span> <a href="tel:+79251393151">8(925) 139-31-51</a></p>
+                  </div>
+                </div>
+                <div class="dbox w-100 d-flex align-items-center">
+                  <div class="icon d-flex align-items-center justify-content-center">
+                    <span class="fa fa-paper-plane"></span>
+                  </div>
+                  <div class="text pl-3">
+                    <p><span>Email:</span> <a href="mailto:zakazgibka@yandex.ru">zakazgibka@yandex.ru</a>
+                    </p>
+                  </div>
+                </div>
+                <div class="dbox w-100 d-flex align-items-center">
+                  <div class="icon d-flex align-items-center justify-content-center">
+                    <span class="fa fa-vk"></span>
+                  </div>
+                  <div class="text pl-3">
+                    <p><span>VK</span> <a href="#">group.vk.ru</a></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
+  </div>
 </section>
 {% endblock %}
